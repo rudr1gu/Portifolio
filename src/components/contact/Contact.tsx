@@ -9,7 +9,7 @@ const Contact = () => {
             Estou sempre interessado em novos projetos e oportunidades de colaboração.
           </p>
           <a 
-            href="mailto:contato@exemplo.com" 
+            href="mailto:rodrigo.santos.ii@hotmail.com" 
             className="inline-flex items-center gap-2 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             <Mail size={20} />
