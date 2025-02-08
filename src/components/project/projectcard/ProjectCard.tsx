@@ -10,24 +10,26 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, tags, repo }: ProjectCardProps) => {
     return (
-        <div className="p-6 rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold mb-4">{title}</h3>
-            <p className="text-gray-600 mb-4">{description}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
+        <div className="relative p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-4 text-center">{title}</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">{description}</p>
+            <div className="flex justify-center flex-wrap gap-3 mb-4">
                 {tags.map((Icon, index) => (
-                    <span key={index} className="text-blue-500 text-xl">
+                    <span key={index} className="text-blue-500 dark:text-blue-400 text-2xl">
                         <Icon />
                     </span>
                 ))}
             </div>
-            <a 
-                href={repo} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center gap-2 text-blue-600 font-semibold hover:underline"
-            >
-                <FaGithub /> Ver no GitHub
-            </a>
+            <div className="flex justify-center">
+                <a 
+                    href={repo} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline"
+                >
+                    <FaGithub /> Ver no GitHub
+                </a>
+            </div>
         </div>
     );
 };
