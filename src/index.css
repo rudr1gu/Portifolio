@@ -6,6 +6,53 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", serif;
+}
+
+body, html{
+    scrollbar-color: #111827 #374151;
+    scrollbar-width: thin;
+
+
+    ::-webkit-scrollbar-thumb {
+        background: #111827;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #111827;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: #666;
+    }
+
+    ::-webkit-scrollbar-button {
+        background: #333;
+    }
+
+    ::-webkit-scrollbar-button:hover {
+        background: #111827;
+    }
+
+    ::-webkit-scrollbar-button:active {
+        background: #666;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: #374151;
+    }
+
+    ::-webkit-resizer {
+        background: #333;
+    }
+
+    ::-webkit-resizer:hover {
+        background: #555;
+    }
+
+    ::-webkit-resizer:active {
+        background: #666;
+    }
 }
 
 header {
@@ -14,5 +61,4 @@ header {
     background-color: #333;
     color: white;
     z-index: 1000;
-    
 }
