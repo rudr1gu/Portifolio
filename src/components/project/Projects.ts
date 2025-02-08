@@ -1,5 +1,5 @@
 import { FaNodeJs, FaReact, FaJava, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
-import { SiSpringboot, SiTailwindcss, SiMysql, SiAngular, SiExpress, SiHandlebarsdotjs, SiSwagger, SiJunit5, SiVercel, SiPwa } from "react-icons/si";
+import { SiSpringboot, SiTailwindcss, SiMysql, SiAngular, SiSwagger, SiJunit5, SiVercel, SiPwa } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc";
 
 const projects = [
