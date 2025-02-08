@@ -1,4 +1,6 @@
 import ProjectCard from "./projectcard/ProjectCard";
+import projects from "./Projects";
+
 
 const Project = () => {
     return (
@@ -6,20 +8,19 @@ const Project = () => {
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12">Projetos em Destaque</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <ProjectCard
-                        title="Sistema de Microserviços"
-                        description="Arquitetura de microserviços com Spring Cloud, implementando service discovery, circuit breaker e API gateway."
-                        tags={['Java', 'Spring Cloud', 'Docker']}
-                    />
-                    <ProjectCard
-                        title="API de E-commerce"
-                        description="Backend completo para plataforma de e-commerce com processamento assíncrono e cache distribuído."
-                        tags={['Spring Boot', 'Redis', 'Kafka']}
-                    />
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            title={project.title}
+                            description={project.description}
+                            tags={project.tags}
+                            repo={project.repo}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default Project;
