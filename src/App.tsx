@@ -13,15 +13,14 @@ const App = () => {
         <Navbar />
       </header>
       <main className="min-h-screen bg-slate-50">
-        <Home />
-        <About />
-        <Skill />
-        <Project />
-        <Contact />
+        <section id="home"><Home /></section>
+        <section id="about"><About /></section>
+        <section id="skill"><Skill /></section>
+        <section id="project"><Project /></section>
+        <section id="contact"><Contact /></section>
       </main>
       <Footer />
     </>
-
   );
 }
 
