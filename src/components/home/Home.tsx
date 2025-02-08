@@ -1,5 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
-import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
     return (
