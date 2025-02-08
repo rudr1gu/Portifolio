@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const themeContext = useContext(ThemeContext);
-  if(!themeContext) return null;
+  if (!themeContext) return null;
   const { theme, toggleTheme } = themeContext;
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full flex justify-evenly items-center py-4 px-8 transition-all duration-300 z-50 ${isScrolled ? "bg-gray-900 shadow-md" : "bg-transparent backdrop-blur-lg"
+      className={`fixed top-0 left-0 w-full flex justify-around items-center py-4 px-8 transition-all duration-300 z-50 ${isScrolled ? "bg-gray-900 shadow-md" : "bg-transparent backdrop-blur-lg"
         }`}
     >
       <h1 className="text-2xl font-bold text-white flex items-center">
@@ -45,9 +45,6 @@ const Navbar = () => {
         className={`absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent flex flex-col md:flex-row items-center gap-6 p-6 md:p-0 md:gap-6 text-lg transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"
           }`}
       >
-        <button onClick={toggleTheme} className="text-xl text-gray-900 dark:text-white p-2">
-        {theme === "dark" ? <FiSun /> : <FiMoon />}
-      </button>
         <button onClick={() => scrollToSection("home")} className="text-white flex items-center gap-2 hover:text-gray-300 transition-all">
           <FaHome /> Início
         </button>
@@ -63,6 +60,17 @@ const Navbar = () => {
         <button onClick={() => scrollToSection("contact")} className="text-white flex items-center gap-2 hover:text-gray-300 transition-all">
           <FaEnvelope /> Contato
         </button>
+        <button
+        onClick={toggleTheme}
+        className="relative flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 hover:bg-gray-700 dark:hover:bg-gray-600 text-white  shadow-md"
+      >
+        <span className="absolute transform transition-all duration-300 scale-100 dark:scale-0">
+          <FiSun size={22} />
+        </span>
+        <span className="absolute transform transition-all duration-300 scale-0 dark:scale-100">
+          <FiMoon size={22} />
+        </span>
+      </button>
       </div>
     </nav>
   );
