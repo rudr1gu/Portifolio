@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container mx-auto text-center px-4">
         <nav className="mb-6">
           <ul className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-            <li><a href="#" className="hover:text-purple-500 transition">Home</a></li>
-            <li><a href="#" className="hover:text-purple-500 transition">About</a></li>
-            <li><a href="#" className="hover:text-purple-500 transition">Service</a></li>
-            <li><a href="#" className="hover:text-purple-500 transition">Works</a></li>
-            <li><a href="#" className="hover:text-purple-500 transition">Contact</a></li>
+            <li><a href="#" className="hover:text-blue-500 transition">Inicio</a></li>
+            <li><a href="#" className="hover:text-blue-500 transition">Sobre</a></li>
+            <li><a href="#" className="hover:text-blue-500 transition">Skills</a></li>
+            <li><a href="#" className="hover:text-blue-500 transition">Projetos</a></li>
+            <li><a href="#" className="hover:text-blue-500 transition">Contato</a></li>
           </ul>
         </nav>
         <p className="text-xs uppercase font-semibold tracking-wide mb-6">© 2025 Rudr1gu. All rights reserved</p>
