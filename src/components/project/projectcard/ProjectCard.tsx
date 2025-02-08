@@ -12,7 +12,7 @@ const ProjectCard = ({ title, description, tags, repo }: ProjectCardProps) => {
     return (
         <div className="relative p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
             <h3 className="text-xl font-semibold text-gray-700 dark:text-white mb-4 text-center">{title}</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4 text-center">{description}</p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-justify">{description}</p>
             <div className="flex justify-center flex-wrap gap-3 mb-4">
                 {tags.map((Icon, index) => (
                     <span key={index} className="text-blue-500 dark:text-blue-400 text-2xl">
