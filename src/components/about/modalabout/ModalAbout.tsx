@@ -10,7 +10,7 @@ const ModalAbout = ({ onClose, isOpen }: ModalAboutProps) => {
             {isOpen && (
                 <div className="flex justify-center items-center fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 z-50">
                     <div className="dark:bg-gray-900 p-8 rounded-lg shadow-lg w-1/2">
-                        <section>
+                        <section className="mb-8">
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Minha Jornada</h3>
                             <p className="text-gray-700 dark:text-gray-300">
                                 Minha trajetória na tecnologia começou com a curiosidade de entender como ela pode transformar vidas.
@@ -21,7 +21,7 @@ const ModalAbout = ({ onClose, isOpen }: ModalAboutProps) => {
                             </p>
                         </section>
 
-                        <section>
+                        <section className="mb-8">
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Principais Projetos</h3>
                             <p className="text-gray-700 dark:text-gray-300">
                                 Desenvolvi a <strong>Rede Conectados</strong>, uma plataforma colaborativa e gamificada criada como <abbr className="no-underline" title="Trabalho de Conclusão de Curso">TCC</abbr>. Inspirada na
@@ -34,7 +34,7 @@ const ModalAbout = ({ onClose, isOpen }: ModalAboutProps) => {
                             </p>
                         </section>
 
-                        <section>
+                        <section className="mb-8">
                             <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Minha Motivação</h3>
                             <p className="text-gray-700 dark:text-gray-300">
                                 O que me motiva é o desafio de construir sistemas que fazem a diferença, seja desenvolvendo aplicações web escaláveis, melhorando a experiência do usuário ou garantindo que cada linha de código tenha um propósito.

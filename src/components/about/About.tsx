@@ -23,7 +23,7 @@ const About = () => {
               Atualmente, estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong>, aprofundando ainda mais meus conhecimentos na área.
             </p>
             <button onClick={onOpen} className="text-blue-500 hover:underline">
-              ver mais...
+              Ver mais...
             </button>
           </article>
         </div>
