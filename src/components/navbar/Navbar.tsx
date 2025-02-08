@@ -1,10 +1,15 @@
-import { useState, useEffect } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { useState, useEffect, useContext } from "react";
+import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { FaHome, FaUser, FaTools, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const themeContext = useContext(ThemeContext);
+  if(!themeContext) return null;
+  const { theme, toggleTheme } = themeContext;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +45,9 @@ const Navbar = () => {
         className={`absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent flex flex-col md:flex-row items-center gap-6 p-6 md:p-0 md:gap-6 text-lg transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"
           }`}
       >
+        <button onClick={toggleTheme} className="text-xl text-gray-900 dark:text-white p-2">
+        {theme === "dark" ? <FiSun /> : <FiMoon />}
+      </button>
         <button onClick={() => scrollToSection("home")} className="text-white flex items-center gap-2 hover:text-gray-300 transition-all">
           <FaHome /> Início
         </button>
