@@ -11,7 +11,6 @@ const Navbar = () => {
   if (!themeContext) return null;
   const { theme, toggleTheme } = themeContext;
 
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > window.innerHeight * 0.2);
@@ -46,7 +45,6 @@ const Navbar = () => {
         className={`absolute md:static top-16 left-0 w-full md:w-auto bg-gray-900 md:bg-transparent flex flex-col md:flex-row items-center gap-6 p-6 md:p-0 md:gap-6 text-lg transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"
           }`}
       >
-
         <button onClick={() => scrollToSection("home")} className="text-white flex items-center gap-2 hover:text-gray-300 transition-all">
           <FaHome /> Início
         </button>
