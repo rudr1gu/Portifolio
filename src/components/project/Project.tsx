@@ -1,7 +1,6 @@
 import ProjectCard from "./projectcard/ProjectCard";
 import projects from "./Projects";
 
-
 const Project = () => {
     return (
         <section className="py-20 px-4">
