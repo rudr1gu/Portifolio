@@ -1,5 +1,6 @@
 import ProjectCard from "./projectcard/ProjectCard";
 import projects from "./Projects";
+import { motion } from "framer-motion";
 
 const Project = () => {
     return (
@@ -8,6 +9,12 @@ const Project = () => {
                 <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-12">Projetos em Destaque</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
+                        <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 50 }} // Começa invisível e deslocado para baixo
+                        animate={{ opacity: 1, y: 0 }} // Fica visível e sobe suavemente
+                        transition={{ duration: 0.5, delay: index * 0.2 }} // Atraso para efeito cascata
+                        >
                         <ProjectCard
                             key={index}
                             title={project.title}
@@ -15,6 +22,7 @@ const Project = () => {
                             tags={project.tags}
                             repo={project.repo}
                         />
+                        </motion.div>
                     ))}
                 </div>
             </div>
