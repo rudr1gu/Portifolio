@@ -13,7 +13,7 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ icon, title, skills }) => {
   return (
-    <div className="relative p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+    <div className="relative p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 w-full h-full">
       <div className="flex justify-center mb-4 text-gray-700 dark:text-gray-200 transition-transform duration-300 group-hover:scale-110">
         {icon}
       </div>
