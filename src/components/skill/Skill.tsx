@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import SkillCard from "./skillcard/SkillCard";
 import skillsData from "./skillsData";
 
@@ -10,7 +11,15 @@ const Skill = () => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillsData.map((skill, index) => (
-            <SkillCard key={index} icon={skill.icon} title={skill.title} skills={skill.skills} />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <SkillCard icon={skill.icon} title={skill.title} skills={skill.skills} />
+            </motion.div>
           ))}
         </div>
       </div>
