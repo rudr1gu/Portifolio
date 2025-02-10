@@ -13,11 +13,11 @@ const ModalAbout = ({ isOpen, onClose }: ModalAboutProps) => {
           <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3">
             Minha Jornada
           </h3>
-          <p className="leading-relaxed text-sm md:text-base">
+          <p className="leading-relaxed text-sm md:text-base text-justify">
             Minha trajetória na tecnologia começou com a curiosidade de entender como ela pode transformar vidas.
             Desde então, venho desenvolvendo soluções para resolver problemas reais, seja através da otimização de processos ou da troca de conhecimento entre estudantes.
           </p>
-          <p className="leading-relaxed mt-3 text-sm md:text-base">
+          <p className="leading-relaxed mt-3 text-sm md:text-base text-justify">
             Meu foco vai além do código: busco aprimorar minha capacidade de trabalho em equipe, liderança e inovação em projetos.
           </p>
         </section>
@@ -26,13 +26,13 @@ const ModalAbout = ({ isOpen, onClose }: ModalAboutProps) => {
           <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3">
             Principais Projetos
           </h3>
-          <p className="leading-relaxed text-sm md:text-base">
-            Desenvolvi a <strong>Rede Conectados</strong>, uma plataforma colaborativa e gamificada criada como <abbr title="Trabalho de Conclusão de Curso">TCC</abbr>.
-            Inspirada na <abbr title="Teoria educacional sobre retenção de aprendizado">Pirâmide de Aprendizagem de William Glasser</abbr>, incentiva a troca de conhecimento entre estudantes, recompensando aqueles que mais contribuem.
+          <p className="leading-relaxed text-sm md:text-base text-justify">
+            Desenvolvi a <strong>Rede Conectados</strong>, uma plataforma colaborativa e gamificada criada como <abbr title="Trabalho de Conclusão de Curso" className="no-underline">TCC</abbr>.
+            Inspirada na <abbr title="Teoria educacional sobre retenção de aprendizado" className="no-underline">Pirâmide de Aprendizagem de William Glasser</abbr>, incentiva a troca de conhecimento entre estudantes, recompensando aqueles que mais contribuem.
           </p>
-          <p className="leading-relaxed mt-3 text-sm md:text-base">
-            Durante esse projeto, trabalhei com <abbr title="Framework frontend baseado em TypeScript">Angular</abbr>, <abbr title="Runtime para JavaScript no backend">Node.js</abbr>,
-            <abbr title="Sistema de gerenciamento de banco de dados relacional">MySQL</abbr> e <abbr title="Padrão de design para comunicação entre sistemas">APIs REST</abbr>.
+          <p className="leading-relaxed mt-3 text-sm md:text-base text-justify">
+            Durante esse projeto, trabalhei com <abbr title="Framework frontend baseado em TypeScript" className="no-underline">Angular</abbr>, <abbr title="Runtime para JavaScript no backend" className="no-underline">Node.js</abbr>,
+            <abbr title="Sistema de gerenciamento de banco de dados relacional" className="no-underline"> MySQL</abbr> e <abbr title="Padrão de design para comunicação entre sistemas" className="no-underline">APIs REST</abbr>.
             Além disso, desenvolvi habilidades em <strong>gestão de projetos</strong> e <strong>inovação</strong>.
           </p>
         </section>

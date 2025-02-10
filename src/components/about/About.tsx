@@ -14,7 +14,7 @@ const About = () => {
             Sobre Mim
           </h2>
           
-          <article className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-6 text-left">
+          <article className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed space-y-6 text-justify">
             <p>
               Sou desenvolvedor <strong>fullstack</strong>, recentemente formado como Técnico em Desenvolvimento de Sistemas pela
               <abbr className="no-underline" title="Escola Técnica Estadual"> ETEC</abbr> Zona Leste e concluí o bootcamp <strong>Java Fullstack</strong> com
