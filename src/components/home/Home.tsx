@@ -5,7 +5,7 @@ const Home = () => {
         <section className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 to-slate-900 text-white">
             <div className="absolute inset-0">
                 <img
-                    src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg"
+                    src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg"
                     alt="Background"
                     className="w-full h-full object-cover opacity-60"
                 />
